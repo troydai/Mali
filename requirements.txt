@@ -1,0 +1,2 @@
+-r mali/requirements.txt
+pylint==1.7.2

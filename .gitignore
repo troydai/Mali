@@ -99,3 +99,10 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Mali
+env.txt
+
+# PyCharm
+.idea/
+!.idea/codeStyleSettings.xml
