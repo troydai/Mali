@@ -1,4 +1,5 @@
 from sqlalchemy import Column, String, Integer, ForeignKey
+from sqlalchemy.engine import Engine
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -36,3 +37,7 @@ class User(Base):
 
     def __repr__(self):
         return f'<User(id={self.id})>'
+
+
+def create_tables(engine: Engine) -> None:
+    Base.metadata.create_all(engine)
